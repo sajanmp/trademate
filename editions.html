@@ -3,18 +3,18 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
     <script>
         $(function () {
@@ -23,7 +23,11 @@
     </script>
 
     <style>
-        .col {
+        .col,.price {
+            border: black 1px solid;
+            text-align: center;
+        }
+        td {
             border: black 1px solid;
         }
     </style>
@@ -34,93 +38,77 @@
         <div id="includedContent">
 
         </div>
-        <div class="row mt-5">
-            <h4 class="text-center">Trademate comes in three editions</h4>
+        <div class="mt-4">
+            <h4 class="text-center">Editions</h4>
         </div>
-        <div class="row mt-2">
-            <div class="col col-sm-12">
-                <h4 class="text-center">Mini Edition</h4>
-                <hr>
-                <ul>
-                    <li>Sales</li>
-                    <li>Sales Returns</li>
-                    <li>Purchase</li>
-                    <li>Purchase Returns</li>
-                    <li>Stock Management</li>
-                    <li>Mulitple Product Packings</li>
-                    <li>Negative Stock Checking</li>
-                    <li>Multiple Billing Formats</li>
-                    <li>Wholesale/retail Pricing</li>
-                    <li>Auto Backup</li>
-                    <li>Multi User</li>
-                </ul>
-            </div>
-            <div class="col col-sm-12">
-                <h4 class="text-center">Standard Edition</h4>
-                <hr>
-                <ul>
-                    <li>All Mini Edition features</li>
-                    <li>Bar Codes</li>
-                    <li>Custom Selling Price</li>
-                    <li>Scheme Discount</li>
-                    <li>Stock Transfer</li>
-                    <li>Stock Entry and Updation</li>
-                    <li>Sales Orders</li>
-                    <li>Quotations</li>
-                    <li>Purchase Orders</li>
-                    <li>MIS Reports</li>
-                    <li>GST Statutory Reports</li>
-                    <li>Credit/Debit Notes</li>
-                    <li>Bill wise Payments</li>
-                    <li>Receivables</li>
-                    <li>Payables</li>
-                    <li>Cheque Handling</li>
-                    <li>Receivables</li>
-                    <li>Aeging Analysis</li>
-                    <li>Claims</li>
-                    <li>Service Charges</li>
-                    <li>Complete Accounting</li>
-                    <li>Import Master Data from Excel Sheets</li>
-                    <li>Network Enabled</li>
-                </ul>
-            </div>
-            <div class="col col-sm-12">
-                <h4 class="text-center">Enterprise Edition</h4>
-                <hr>
-                <ul>
-                    <li>All Standard Edition Features</li>
-                    <li>Multiple Stock Locations</li>
-                    <li>Cloud Backup and Restore Services</li>
-                    <li>POS</li>
-                    <li>Mobile App Integration</li>
-                    <li>Web Database connectivity</li>
-                    <li>Multiple Firms</li>
-                    <li>Bank Reconciliation</li>
-                </ul>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-12">
-                    <h4 class="text-center">Price: INR 12,000/-</h4>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <h4 class="text-center">Price: INR 20,000/-</h4>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <h4 class="text-center">Price: INR 25,000/-</h4>
-                </div>
-            </div>
-            <div class="row mt-2">
-                <ul>
-                    <li>The price quoted above for Standard and Enterprise Editions is for
-                        one server machine and two nodes</li>
-                    <li>For each additional node, additional charge would be INR 5,000</li>
-                    <li>Network access is not supported in Mini Edition</li>
-                    <li>One year free support provided from the date of installation</li>
-                    <li>Free patches and online training would be provided during the period of free support</li>
-                    <li>Annual Maintenance Contract or AMC is 10% of software cost every year</li>
-                </ul>
-            </div>
-        </div>
+        <table class="table" style="border:black 1px solid">
+            <thead>
+                <td class="price">Mini Edition</td>
+                <td class="price">Standard Edition</td>
+                <td class="price">Enterprise Edition</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Sales</li>
+                            <li>Sales Returns</li>
+                            <li>Purchase</li>
+                            <li>Purchase Returns</li>
+                            <li>Stock Management</li>
+                            <li>Mulitple Product Packings</li>
+                            <li>Negative Stock Checking</li>
+                            <li>Multiple Billing Formats</li>
+                            <li>Wholesale/retail Pricing</li>
+                            <li>Auto Backup</li>
+                            <li>Multi User</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <li>All Mini Edition features</li>
+                        <li>Bar Codes</li>
+                        <li>Custom Selling Price</li>
+                        <li>Scheme Discount</li>
+                        <li>Stock Transfer</li>
+                        <li>Stock Entry and Updation</li>
+                        <li>Sales Orders</li>
+                        <li>Quotations</li>
+                        <li>Purchase Orders</li>
+                        <li>MIS Reports</li>
+                        <li>GST Statutory Reports</li>
+                        <li>Credit/Debit Notes</li>
+                        <li>Bill wise Payments</li>
+                        <li>Receivables</li>
+                        <li>Payables</li>
+                        <li>Cheque Handling</li>
+                        <li>Receivables</li>
+                        <li>Aeging Analysis</li>
+                        <li>Claims</li>
+                        <li>Service Charges</li>
+                        <li>Complete Accounting</li>
+                        <li>Import Master Data from Excel Sheets</li>
+                        <li>Network Enabled</li>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>All Standard Edition Features</li>
+                            <li>Multiple Stock Locations</li>
+                            <li>Cloud Backup and Restore Services</li>
+                            <li>POS</li>
+                            <li>Mobile App Integration</li>
+                            <li>Web Database connectivity</li>
+                            <li>Multiple Firms</li>
+                            <li>Bank Reconciliation</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="price"><h5>INR 12,000</h5></td>
+                    <td class="price"><h5>INR 20,000</h5></td>
+                    <td class="price"><h5>INR 25,000</h5></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 
