@@ -1,0 +1,8 @@
+GitHub Command list
+
+github remote -v  => View all remote connections
+github add . => Mark the changes made in github folder
+github commit -m <title> => Commit the changes in the name <title>
+gihub push origin master => Push the changes to github site
+
+

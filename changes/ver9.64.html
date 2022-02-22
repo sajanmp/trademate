@@ -1,0 +1,171 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    
+    <script>
+        $(function () {
+            $("#includedContent").load("../layout.html");
+        });
+    </script>
+    <style>
+        .bug {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="includedContent">
+
+        </div>
+        <div>
+            <h4 class="text-center">Changes in Version 9.64</h4>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Model</th>
+                    <th>Module</th>
+                    <th>Description</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bug">
+                    <td>Tax Inclusive</td>
+                    <td>Sales Form</td>
+                    <td>The taxes shown in Summary tab were incorrect even though it was being properly updated in database</td>
+                    <td>Fix</td>
+                </tr>
+                <tr>
+                    <td>Any</td>
+                    <td>Sales Form</td>
+                    <td>Decimal not allowed in quantity column in grid for packed items</td>
+                    <td>Feature</td>
+                </tr>
+                <tr class="bug">
+                    <td>Any</td>
+                    <td>Statutory Report - Product Wise Tax Schedule Breakup</td>
+                    <td>
+                        The report was not in order of bill number<br/>
+                        The net bill amount shown was incorrect<br/>
+                        The gross amount shown was incorrect. It should be inclusive of discount
+                    </td>
+                    <td>Fix</td>
+                </tr>
+                <tr class="bug">
+                    <td>Any</td>
+                    <td>Product Master Form - Packing Tab</td>
+                    <td>
+                        Tick mark disappears when ENTER key pressed in tick box columns<br/>
+                        Tick mark disappers when focus shifts to tick box column after selecting a packing from packing lookup
+                    </td>
+                    <td>Fix</td>
+                </tr>
+                <tr>
+                    <td>Any</td>
+                    <td>Purchase Form</td>
+                    <td>Option to enter Summary Discount</td>
+                    <td>Feature</td>
+                </tr>
+                <tr class="bug">
+                    <td>Any</td>
+                    <td>Purchase Form</td>
+                    <td>A message <strong>Slab Rate is less than Cost Rate</strong> sometimes seen while saving Purchase Bill</td>
+                    <td>Fix</td>
+                </tr>
+                <tr>
+                    <td>Price Slab</td>
+                    <td>Sales Report - Bill Wise</td>
+                    <td>Included filter on Price Slab in More Options</td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Price Slab</td>
+                    <td>Customer Master list</td>
+                    <td>Included filter on Price Slab in More Options</td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Tax Exclusive</td>
+                    <td>Product List</td>
+                    <td>Option to show Rate adding Tax</td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Any</td>
+                    <td>Cheque Entry Report</td>
+                    <td>Option to show Cheque Date when Bank Format is ticked</td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Supermarket</td>
+                    <td>Application Parameters</td>
+                    <td>Option to enable/disable Counter Wise User Closing Entry</td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Supermarket</td>
+                    <td>Counter Transactions</td>
+                    <td>Counter Wise closing entry disabled if same disabled in Application Paramters</td>
+                    <td>Feature</td>
+                </tr>
+                <tr class="Bug">
+                    <td>Any</td>
+                    <td>Product Correction Wizard</td>
+                    <td>Was taking too much time to show unused products</td>
+                    <td>Fix</td>
+                </tr>
+                <tr>
+                    <td>Any</td>
+                    <td>Clean Product Master</td>
+                    <td>
+                        A tool to remove products that does not have closing stock and does not have any transactions<br/>
+                        The option is available under Tools/Clean Master Data/Products
+                    </td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Any</td>
+                    <td>Clean Customer Master</td>
+                    <td>
+                        A tool to remove customers with nil balances and without any transaction<br/>
+                        The option is available under Tools/Clean Master Data/Customers
+                    </td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Any</td>
+                    <td>Clean Supplier Master</td>
+                    <td>
+                        A tool to remove suppliers with nil balances and without any transaction<br/>
+                        The option is available under Tools/Clean Master Data/Suppliers
+                    </td>
+                    <td>Feature</td>
+                </tr>
+                <tr class="bug">
+                    <td>Any</td>
+                    <td>Balance Sheet</td>
+                    <td><strong>Invalid Use of Null</strong> error is now handled</td>
+                    <td>Fix</td>
+                </tr>
+            </tbody>
+    </div>
+</body>
+
+</html>

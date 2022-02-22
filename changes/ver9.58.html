@@ -1,0 +1,159 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    
+    <script>
+        $(function () {
+            $("#includedContent").load("../layout.html");
+        });
+    </script>
+    <style>
+        .bug {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="includedContent">
+
+        </div>
+        <div>
+            <h4 class="text-center">Changes in Version 9.58</h4>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Model</th>
+                    <th>Module</th>
+                    <th>Description</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Any</td>
+                    <td>Price Updation Wizard</td>
+                    <td>
+                        Product Tax can be changed and updated<br/>
+                        Increased form height<br/>
+                        Wholesale and Retail Margins shown<br/>
+                        MRP and Cost Rates shown<br/>
+                        Filter on Active products<br/>
+                        Wholesale and Retail Rates can be set based on margins
+                    </td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Any</td>
+                    <td>GSTR-1 Report</td>
+                    <td>Supports Excel Version 2007 and above</td>
+                    <td>Feature</td>
+                </tr>
+                <tr class="bug">
+                    <td>Any</td>
+                    <td>Purchase Bill (Product Wise)</td>
+                    <td>Product GST is now updated only for last purchase of the product</td>
+                    <td>Fix</td>
+                </tr>
+                <tr>
+                    <td>Any</td>
+                    <td>Customer Master Form</td>
+                    <td>if Customer is <strong>Outside State</strong> Home State not allowed</td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Any</td>
+                    <td>Claims/Expense Entry Form</td>
+                    <td>GST (18%) assigned by default</td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Any</td>
+                    <td>FTP Settings</td>
+                    <td>New module to configure FTP Settings that will be used for
+                        cloud backup and restore. The option is available under Admin
+                    </td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Any</td>
+                    <td>Supplier Groups</td>
+                    <td>New module to group Suppliers</td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Any</td>
+                    <td>Supplier Master</td>
+                    <td>Option to specify Supplier Group</td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Any</td>
+                    <td>Sales Detailed Report (Product Wise)</td>
+                    <td>Filter on Supplier Group</td>
+                    <td>Feature</td>
+                </tr>
+                <tr class="bug">
+                    <td>Bill Wise Matching</td>
+                    <td>Bill Wise Payment</td>
+                    <td>Credit note lookup showing error</td>
+                    <td>Fix</td>
+                </tr>
+                <tr>
+                    <td>Supermarket</td>
+                    <td>Sales Form</td>
+                    <td>
+                        Focus shifts to quantity column after reading barcode 
+                        if Cell focusing order specified in Application Parameters
+                    </td>
+                    <td>Feature</td>
+                </tr>
+                <tr class="bug">
+                    <td>Any</td>
+                    <td>Sales Form</td>
+                    <td>
+                        Was not able to select from MRP lookup if product had multiple
+                        batches and <strong>Load Last Batch</strong> was disabled in 
+                        Applicaton Parameters
+                    </td>
+                    <td>Fix</td>
+                </tr>
+                <tr>
+                    <td>Tax Inclusive Model</td>
+                    <td>Product Info</td>
+                    <td>Tax Inclusive rate now shown</td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Any</td>
+                    <td>Data Backup</td>
+                    <td>Backup file is compressed before uploading to cloud</td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Any</td>
+                    <td>Restore Data</td>
+                    <td>Restore option from cloud backup included</td>
+                    <td>Feature</td>
+                </tr>
+            </tbody>
+    </div>
+</body>
+
+</html>
