@@ -1,0 +1,137 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    
+    <script>
+        $(function () {
+            $("#includedContent").load("../layout.html");
+        });
+    </script>
+    <style>
+        .bug {
+            color: red;
+        }
+        .new {
+            color:green
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="includedContent">
+
+        </div>
+        <div>
+            <h4 class="text-center">Changes in Version 9.88</h4>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Model</th>
+                    <th>Module</th>
+                    <th>Description</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Any</td>
+                    <td>Customer/Supplier Form</td>
+                    <td>Validation provided for GST Number<br/>
+                        State is now cross checked with GST Number during customer/supplier creation<br/>
+                        Home State is assigned by default
+                    </td>
+                    <td>Feature</td>
+                </tr>
+
+                <tr>
+                    <td>Any</td>
+                    <td>Purchase Report</td>
+                    <td>Report can now be taken based on due date"
+                    <td>Feature</td>
+                </tr>
+
+                <tr>
+                    <td>Any</td>
+                    <td>Tax Invoice (Input/Output)</td>
+                    <td>Option to choose cash or credit payment"
+                    <td>Feature</td>
+                </tr>
+
+                <tr>
+                    <td>Normal</td>
+                    <td>Sales Report (Bill Wise)</td>
+                    <td>Blocked printing of customer bills if marked as blocked in customer form</td>
+                    <td>Feature</td>
+                </tr>
+
+                <tr>
+                    <td>Any</td>
+                    <td>Purchase Form</td>
+                    <td>Now shows taxable amount<br/>
+                        Option to make minor corrections in gst tax amounts 
+                    </td>
+                    <td>Feature</td>
+                </tr>
+
+                <tr>
+                    <td>Supermarket</td>
+                    <td>Counter transaction</td>
+                    <td>Closing entry of last day of previous financial year is now being considered
+                         if no closing entries found in current year</td>
+                    <td>Feature</td>
+                </tr>
+
+                <tr>
+                   <td>Any</td>
+                   <td>Product Info</td>
+                   <td>Location wise Stock is now being shown in Stock Pane<br/>
+                       Supplier list included<br/>
+                       Mentions Packed or loose item
+                   </td>
+                   <td>Feature</td>
+                </tr>
+
+                <tr>
+                    <td>Any</td>
+                    <td>Data Backup</td>
+                    <td>Network path can be specified<br/></td>
+                        Default database backup path created in server machine if none specified
+                    </td>
+                    <td>Feature</td>
+                </tr>
+
+                <tr>
+                    <td>Any</td>
+                    <td>System Info</td>
+                    <td>Node machine name and server machine name is now being shown</td>
+                    <td>Feature</td>
+                </tr>
+    
+                <tr>
+                    <td>Any</td>
+                    <td>Sales Form</td>
+                    <td>Accounts voucher generated if found to be missing in online posting model when Show Voucher button clicked</td>
+                    <td>Feature</td>
+                </tr>
+                </tr>
+     </tbody>
+    </div>
+</body>
+
+</html>

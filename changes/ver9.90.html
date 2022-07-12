@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    
+    <script>
+        $(function () {
+            $("#includedContent").load("../layout.html");
+        });
+    </script>
+    <style>
+        .bug {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="includedContent">
+
+        </div>
+        <div>
+            <h4 class="text-center">Changes in Version 9.90</h4>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Model</th>
+                    <th>Module</th>
+                    <th>Description</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Supermarket</td>
+                    <td>Sales Form</td>
+                    <td>Product Detailed lookup now shows total stock nd godown stock if godown stock location is configured</td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Any</td>
+                    <td>Duplicate Product Codes</td>
+                    <td>Option to select all Product Codes without stock for removal</td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Any</td>
+                    <td>Purchase Form</td>
+                    <td>Option to insert a new row with option to regenerate serial numbers</td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Any</td>
+                    <td>Purchase Form</td>
+                    <td>Option to increase or decrease font size in grid by pressing F5 key</td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Supermarket</td>
+                    <td>Sales Report (Bill Wise)</td>
+                    <td>Customer name column now shows payment mode in case of online payment</td>
+                    <td>Feature</td>
+                </tr>
+
+            </tbody>
+    </div>
+</body>
+
+</html>

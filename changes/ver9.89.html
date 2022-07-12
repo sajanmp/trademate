@@ -1,0 +1,183 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    
+    <script>
+        $(function () {
+            $("#includedContent").load("../layout.html");
+        });
+    </script>
+    <style>
+        .bug {
+            color: red;
+        }
+        .new {
+            color:green
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="includedContent">
+
+        </div>
+        <div>
+            <h4 class="text-center">Changes in Version 9.89</h4>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Model</th>
+                    <th>Module</th>
+                    <th>Description</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Any</td>
+                    <td>Stock Transfer Report</td>
+                    <td>The report is now available</td>
+                    <td>Feature</td>
+                </tr>
+                <tr class="new">
+                    <td>Any</td>
+                    <td>Packed Items Correction</td>
+                    <td>A tool to easily mark or unmark Items as Packed Item. <br/>Included under Tools</td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Any</td>
+                    <td>GSTR-1 Report</td>
+                    <td>Now considers Sales Return in B2C Sales</td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Supermarket</td>
+                    <td>Counter Transaction</td>
+                    <td>Normal counter transaction entry cannot be  made a closing entry or vice versa</td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Supermarket</td>
+                    <td>Counter Trnasaction</td>
+                    <td>Closing Entry is now saved in the name of logged in user id</td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Supermarket</td>
+                    <td>Bar Code printing</td>
+                    <td>Product can be also be selected by entering product code</td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Supermarket</Td>
+                    <td>Sales return</td>
+                    <td>Option to select Sales man</td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Any</Td>
+                    <td>Customer Import</td>
+                    <td>All imported customers will be allowed cash or credit sales by default</td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Supermarket</Td>
+                    <td>Sales summary (User wise)</td>
+                    <td>User selection restricted to Administrative level users only</td>
+                    <td>Feature</td>
+                </tr>
+                <tr class="new">
+                    <td>Any</Td>
+                    <td>Duplicate Product Codes</td>
+                    <td>New module included under Tools to identify and remove duplicate product codes</td>
+                    <td>Feature</td>
+                </tr>
+               
+                <tr>
+                    <td>Any</Td>
+                    <td>Sales Form</td>
+                    <td>Option to specify line wise discount by admin level users in form incase it is disabled in applciation settings</td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Any</Td>
+                    <td>Main Menu</td>
+                    <td>Toolbar icons now visible for all users</td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Any</Td>
+                    <td>Purchase Report (Bill Wise)</td>
+                    <td>Now shows due date along with purchase date if taken due date wise</td>
+                    <td>Feature</td>
+                </tr>
+                <tr class="new">
+                    <td>Any</Td>
+                    <td>WebSite</td>
+                    <td>Link to Website provided under Help</td>
+                    <td>Feature</td>
+                </tr>
+                <tr class="new">
+                    <td>Any</Td>
+                    <td>Help Manual</td>
+                    <td>Link to Help Manual provided under Help</td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Any</Td>
+                    <td>Login</td>
+                    <td>Unsed and uncleared transaction locks are now being cleared automatically</td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Any</Td>
+                    <td>Statutory Reports</td>
+                    <td>Cess now being considered in all gst reports</td>
+                    <td>Feature</td>
+                </tr>
+                <tr>
+                    <td>Any</Td>
+                    <td>printer Settings</td>
+                    <td>Option to specify wholesale and retail printer</td>
+                    <td>Feature</td>
+                </tr>
+                <tr class="bug">
+                    <td>Supermarket</Td>
+                    <td>Counter Transaction</td>
+                    <td>suspense amount (if any) is now being posted to accounts</td>
+                    <td>Fix</td>
+                </tr>
+                <tr class="new">
+                    <td>Any</Td>
+                    <td>General Ledger Account Heads</td>
+                    <td>Import of general ledger account heads from excel now provided</td>
+                    <td>Feature</td>
+                </tr>
+                <tr class="new">
+                    <td>Any</Td>
+                    <td>Server Settings</td>
+                    <td>Option to change database server provided under Admin</td>
+                    <td>Feature</td>
+                </tr>
+            </tbody>
+    </div>
+</body>
+
+</html>
